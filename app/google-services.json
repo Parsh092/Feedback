@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "11626787788",
+    "project_id": "feedback-a7243",
+    "storage_bucket": "feedback-a7243.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:11626787788:android:6f77bd014c5965bf866369",
+        "android_client_info": {
+          "package_name": "com.parsh.feedback"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "11626787788-f6tiu21k0kk88v4lagkk4foti25d57c1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9tXO57hb98mufvcQjVfKyXyT6ALrSNTo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "11626787788-f6tiu21k0kk88v4lagkk4foti25d57c1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
