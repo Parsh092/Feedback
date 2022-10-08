@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
         storage = FirebaseStorage.getInstance();
         Firebase.setAndroidContext(this);
         String UniqueId = Settings.Secure.getString(getApplicationContext().getContentResolver(), Settings.Secure.ANDROID_ID);
-        firebase = new Firebase("https://console.firebase.google.com/u/0/project/feedback-a7243/database/feedback-a7243-default-rtdb/data/~2F" + UniqueId);
+        firebase = new Firebase("https://feedback-a7243-default-rtdb.firebaseio.com/Users" + UniqueId);
         binding.send.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
