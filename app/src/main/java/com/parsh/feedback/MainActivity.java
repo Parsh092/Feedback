@@ -65,6 +65,7 @@ public class MainActivity extends AppCompatActivity {
         firebase = new Firebase("https://feedback-a7243-default-rtdb.firebaseio.com/Users" + UniqueId);
         binding.send.setOnClickListener(new View.OnClickListener() {
             @Override
+
             public void onClick(View v) {
                 binding.btnDetails.setEnabled(true);
                 final String name = binding.namedata.getText().toString();
@@ -104,12 +105,20 @@ public class MainActivity extends AppCompatActivity {
                     binding.messagedata.setError(null);
                     binding.send.setEnabled(true);
                 }
+
                 Toast.makeText(MainActivity.this, "Thanks For Your Feedback", Toast.LENGTH_SHORT).show();
                 binding.btnDetails.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
                         new AlertDialog.Builder(MainActivity.this).setTitle("Sended Details").
                                 setMessage("Name - " + name + "\n\nEmail - " + email + "\n\nFeedback - " + message).show();
+                    }
+                });
+
+                binding.ratingBar.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Toast.makeText(MainActivity.this, "Rating Marked", Toast.LENGTH_SHORT).show();
                     }
                 });
 
