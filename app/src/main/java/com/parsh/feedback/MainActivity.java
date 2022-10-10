@@ -122,6 +122,13 @@ public class MainActivity extends AppCompatActivity {
                     }
                 });
 
+                binding.crash.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        throw new RuntimeException("Crash Test");
+                    }
+                });
+
             }
         });
     }
